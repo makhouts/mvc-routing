@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+ <h3>
+    <a href="{{ path("about-becode") }}">About-becode</a>
+</h3>
+
+<h1>Hello {{ name }} </h1>
+
+<form action="{{ path("changeMyName") }}" method="post">
+    <lable for="name">Name: </lable>
+    <input type="text" id="name" value="" name="name" ></br>
+    <button type="submit" name="submit" class="btn btn-primary">submit</button>
+</form>
+
+
+{% endblock %}
